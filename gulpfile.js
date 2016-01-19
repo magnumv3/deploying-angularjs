@@ -14,6 +14,7 @@ var es = require('event-stream');
 var ngTemplateCache = require('gulp-angular-templatecache');
 var autoprefixer = require('gulp-autoprefixer');
 var csso = require('gulp-csso');
+var imagemin = require('gulp-imagemin');
 
 gulp.task('test', function (done) {
 	new karma({
@@ -99,13 +100,19 @@ gulp.task('copy:styles', ['sass'], function () {
     .pipe(gulp.dest('dist/styles'));
 });
 
+gulp.task('copy:images', function() {
+  gulp.src('src/assets/images/**/*')
+    .pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
+    .pipe(gulp.dest('dist/assets/images'));
+});
+
 gulp.task('watch', function () {
 	gulp.watch('src/styles/**/*.scss', ['sass']);
 	gulp.watch('src/**/*.html', ['reload']);
 	gulp.watch('src/*/*.js', ['reload']);
 });
 
-gulp.task('build', ['htmlreplace', 'bundle:source', 'bundle:vendor', 'copy:styles']);
+gulp.task('build', ['htmlreplace', 'bundle:source', 'bundle:vendor', 'copy:styles', 'copy:images']);
 
 gulp.task('default', ['serve']);
 gulp.task('heroku:production', ['build']);
