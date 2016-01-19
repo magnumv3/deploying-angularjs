@@ -4,7 +4,7 @@
   "description": "Deploying AngularJS tutorial",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "./node_modules/bower/bin/bower install"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/magnumv3/deploying-angularjs#readme",
   "dependencies": {
+    "bower": "^1.7.2",
     "browser-sync": "^2.11.1",
     "chai": "^3.4.1",
     "event-stream": "^3.3.2",
