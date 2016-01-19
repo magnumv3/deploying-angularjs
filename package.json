@@ -1,0 +1,48 @@
+{
+  "name": "deploy-angular",
+  "version": "1.0.0",
+  "description": "Deploying AngularJS tutorial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magnumv3/deploying-angularjs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/magnumv3/deploying-angularjs/issues"
+  },
+  "homepage": "https://github.com/magnumv3/deploying-angularjs#readme",
+  "dependencies": {
+    "browser-sync": "^2.11.1",
+    "chai": "^3.4.1",
+    "event-stream": "^3.3.2",
+    "express": "^4.13.3",
+    "gulp": "^3.9.0",
+    "gulp-angular-templatecache": "^1.8.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-csso": "^1.0.1",
+    "gulp-html-replace": "^1.5.5",
+    "gulp-jshint": "^2.0.0",
+    "gulp-ng-annotate": "^1.1.0",
+    "gulp-sass": "^2.1.1",
+    "gulp-uglify": "^1.5.1",
+    "gzippo": "^0.2.0",
+    "jshint": "^2.9.1",
+    "jshint-stylish": "^2.1.0",
+    "karma": "^0.13.19",
+    "karma-chai": "^0.1.0",
+    "karma-mocha": "^0.2.1",
+    "karma-phantomjs-launcher": "^0.2.3",
+    "mocha": "^2.3.4",
+    "phantomjs": "^1.9.19"
+  },
+  "devDependencies": {
+    "karma-mocha": "^0.2.1",
+    "karma-phantomjs-launcher": "^0.2.3"
+  }
+}

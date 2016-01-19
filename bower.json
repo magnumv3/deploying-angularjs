@@ -1,0 +1,25 @@
+{
+  "name": "deploy-angular",
+  "authors": [
+    "Jason Hughes <hughes.jasone@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "https://github.com/magnumv3/deploying-angularjs.git",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.8",
+    "angular-local-storage": "~0.2.3",
+    "angular-mocks": "~1.4.8",
+    "angular-ui-router": "~0.2.15"
+  }
+}
