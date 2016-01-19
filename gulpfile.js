@@ -102,7 +102,7 @@ gulp.task('copy:styles', ['sass'], function () {
 
 gulp.task('copy:images', function() {
   gulp.src('src/assets/images/**/*')
-    .pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
+    .pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
     .pipe(gulp.dest('dist/assets/images'));
 });
 
