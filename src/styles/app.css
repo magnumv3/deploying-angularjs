@@ -50,6 +50,9 @@ table {
     cursor: pointer;
     background-color: #5d87b7; }
 
+a {
+  text-decoration: none; }
+
 .card, .loader {
   background: #FFFFFF;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
